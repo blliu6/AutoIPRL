@@ -16,7 +16,6 @@ def convert(origin: str, bounds):
         origin = origin.replace(f'x{i + 1}', f'({high - low}*x{i + 1}+{low})')
     origin = sp.sympify(origin)
     origin = sp.expand(origin)
-    print(origin)
     terms = origin.as_ordered_terms()
     dic = {}
     for term in terms:

@@ -14,7 +14,7 @@ from proof.reappear import reappear
 def main():
     env_name = 'C1'
     example = get_examples_by_name(env_name)
-    load = False
+    load = True
     begin = timeit.default_timer()
     opts = {
         'example': example,
